@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+   
+    <div class = "container header">
+    <h1 align ="center">Weather Dashboard</h1>
+    </div>
+
+
+    <!--how to use bootstrap-->
+    <!--uses flex box to make grids-->
+    <!--start with one div as the starting container class mandatory-->
+    <!--in the container class you add rows and columns can add as many as oyu need-->
+    <!--in the row class you put columns and in the columns goes content-->
+
+<!--IDK-->
+<div class="input row justify-content-center">
+                                
+    <input type="text" placeholder = "Enter a city" class="inputValue">
+    <input type="submit" value="Submit" class = "searchButton btn btn-primary">
+
+</div>
+
+
+
+    <div class = "container my-container">
+        <div class = "row my-row">
+            <div class="col-4 my-col">
+                <!--Row 1 column 1-->
+
+        
+
+                  
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <h2 class = "mostViewed">Most Viewed Cities</h2>
+                    <a id = "navBarCity" class="nav-link active austin" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Austin</a>
+                    <a id = "navBarCity" class="nav-link chicago" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Chicago</a>
+                    <a id = "navBarCity" class="nav-link newYork" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">New York</a>
+                    <a id = "navBarCity" class="nav-link orlando" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Orlando</a>
+                    <a id = "navBarCity" class="nav-link sanFrancisco" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">San Francisco</a>
+                    <a id = "navBarCity" class="nav-link denver" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Denver</a>
+                    <a id = "navBarCity" class="nav-link atlanta" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Atlanta</a>
+                  
+            
+                
+                </div>
+
+                 
+
+            </div>
+
+            
+
+
+            <!--row 1 column 2-->
+            <div class="col-8 my-col">
+                
+                <div class="jumbotron">
+
+                    <!--attempt to display on the jumbotron-->
+                    
+                        <h1 class="name"></h1>
+                        <p class = "desc"></p>
+                        <p class = "temp"></p>
+                        <p class = "humid"></p>
+                        <p class = "windSpeed"></p>
+                        <p class = "uvIndex"></p>
+                    
+
+                        <!--
+                    <h1 class="display-4"></h1>
+                    <p class="lead"></p>
+                -->
+              
+                    <!--
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        -->
+
+
+                        
+                  </div>
+
+                  <h4 align = "center" class = "forecastHeader">5-Day Forecast</h4>
+                  <div class = "row justify-content-center"> 
+      
+                    <div class ="container justify-content-center">
+                
+                        <span class="border border-dark justify-content-center">
+                            Day 1
+                        </span>
+                        <span class="border border-dark justify-content-center">
+                            Day 2
+                        </span>
+                        <span class="border border-dark justify-content-center">
+                            Day 3
+                        </span>
+                        <span class="border border-dark justify-content-center">
+                            Day 4
+                        </span>
+                        <span class="border border-dark justify-content-center">
+                            Day 5
+                        </span>
+                        
+                    </div>
+      
+                  </div>
+                  
+                </div>
+                  
+            </div>
+             
+        
+        </div>
+
+            </div>
+    
+                </div>
+
+                        </div>
+
+                                </div>
+
+                                        </div>
+    
+
+    
+    
+
+</head>
+<body>
+
+
+
+   <!--
+    
+          // Create and save a reference to new empty table row
+          // Create and save references to 3 td elements containing the Title, Year, and Actors from the AJAX response object
+          // Append the td elements to the new table row
+          // Append the table row to the tbody element
+        
+    
+        // Repeat the above logic to add rows for two more movies of your choice
+    
+        // BONUS: Once complete, try to make your code as DRY as possible through the use of functions
+      
+-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src = "script.js"></script>
+
+</body>
+</html>
